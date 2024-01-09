@@ -10,6 +10,22 @@ import 'package:meal_monkey/core/services/location_service.dart';
 import 'package:meal_monkey/core/services/notification_service.dart';
 import 'package:meal_monkey/firebase_options.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+/*
+network utilits
+network config
+common response
+
+*/
+
+
+/* for all api
+reposetry
+end point
+model
+ */
+/*
+الاستدعاء
+ */
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -2,7 +2,7 @@ import 'package:meal_monkey/core/enums/request_type.dart';
 import 'package:meal_monkey/ui/shared/utils.dart';
 
 class NetworkConfig {
-  static String BASE_API = 'api/web/';
+  static String BASE_API = 'api/web/';///تعديل
 
   static String getFullApiRoute(String apiRoute) {
     return BASE_API + apiRoute;
@@ -15,8 +15,9 @@ class NetworkConfig {
   }) {
     return {
       if (needAuth!)
-        "Authorization": "Bearer ${storage.getTokenInfo()?.accessToken ?? ''}",
+        "Authorization": "Bearer ${storage.getTokenInfo()?.accessToken ?? ''}",//////تعدبل
       if (requestType != RequestType.GET) "Content-Type": "application/json",
+
       ...extraHeaders!
     };
   }

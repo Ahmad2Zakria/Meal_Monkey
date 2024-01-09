@@ -23,6 +23,7 @@ class UserRepository {
           'userName': email,
           'password': password,
         },
+       // params: {'id':'${5}'},
       ).then(
         (response) {
           CommonResponseModel<Map<String, dynamic>> commonResponse =
@@ -30,7 +31,8 @@ class UserRepository {
           if (commonResponse.getStatus) {
             return Right(
               TokenInfoModel.fromJson(
-                commonResponse.data ?? {},
+                commonResponse.data ?? {},//تعديل حسب ال API
+                  //commonResponse.data["token"]//
               ),
             );
           } else {

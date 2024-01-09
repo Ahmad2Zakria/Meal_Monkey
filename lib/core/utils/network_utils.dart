@@ -10,7 +10,7 @@ import 'package:meal_monkey/ui/shared/custom_widgets/custom_toast.dart';
 import 'package:path/path.dart' as path;
 
 class NetworkUtil {
-  static String baseUrl = 'training.owner-tech.com';
+  static String baseUrl = 'student.valuxapps.com';/////////تعديل
   static var client = http.Client();
   static bool online = true;
 
@@ -91,7 +91,7 @@ class NetworkUtil {
     try {
       var request = http.MultipartRequest(
         requestType.name,
-        Uri.https(baseUrl, url, params),
+        Uri.https(baseUrl, url, params),//تعديل ////////////
       );
 
       var _filesKeyList = files!.keys.toList();
